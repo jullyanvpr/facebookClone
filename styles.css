@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "sfprodisplay";
+    src: url(assets/SFProDisplay-Regular.ttf),
+    url(assets/SFProDisplay-Light.ttf),
+    url(assets/SFProDisplay-Heavy.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.container {
+    display: flex;
+    margin: 40px;    
+}
+
+.container__header {
+    margin-right: 100px;
+}
+
+.container__header__logo__item {
+    height: 2.5rem;
+}
+
+.container__header__text {
+    width: 29rem;
+    margin: 20px 0;
+    font-family: "sfprodisplay";
+    font-weight: 300;    
+    font-size: 1.75rem;
+    line-height: 32px;
+    color: #1c1e21;
+}
+
+.container__formAndText {
+    width: 24.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.container__form {
+    width: 24.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 28px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);    
+}
+
+.container__form__input {
+    width: 22rem;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    font-size: 1rem;
+    outline: none;
+}
+
+
+.container__form__input::placeholder {
+    color: #868686;
+}
+
+.container__form__entrar {
+    width: 22rem;
+    margin-bottom: 15px;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background-color: #166fe5;
+    font-family: "sfprodisplay";
+    font-weight: 600;
+    font-size: 1.25rem;    
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.container__form__esqueceu {
+    margin-bottom: 25px;
+    color: #166fe5;
+    font-family: "sfprodisplay";
+    font-weight: 100;
+    letter-spacing: .25px;
+    text-decoration: none;
+}
+
+.container__form__esqueceu:hover {
+    text-decoration: underline;
+}
+
+.container__form__line {
+    height: 1px;
+    width: 22rem;
+    margin-bottom: 25px;
+    background-color: #dddfe2;
+}
+
+.container__form__novaConta {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background-color: #36a420;
+    font-family: "sfprodisplay";
+    font-weight: 600;
+    font-size: 1.25rem;    
+
+    cursor: pointer;
+}
+
+.container__text {
+    text-align: center;
+    font-family: "sfprodisplay";
+}
+
+.container__text__link {
+    text-decoration: none;
+    font-weight: 600;
+    color: #1c1e21;
+}
+
+.container__text__link:hover {
+    text-decoration: underline;
+}
+
+
+/* Adicionar as mediaquery de responsividade pra 900px wide e 1072px wide */
