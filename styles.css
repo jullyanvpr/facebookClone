@@ -20,12 +20,10 @@ main {
 }
 
 .container {
+    width: 67.5rem;
     display: flex;
-    margin: 40px;    
-}
-
-.container__header {
-    margin-right: 100px;
+    justify-content: space-between;
+    margin: 40px;
 }
 
 .container__header__logo__item {
@@ -47,7 +45,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 40px;
 }
 
 .container__form {
@@ -143,5 +140,37 @@ main {
     text-decoration: underline;
 }
 
+@media (max-width: 1072px) {
+    .container__header__text {
+        width: 23rem;
+        font-size: 1.5rem;
+        line-height: 28px;
+    }   
+}
 
-/* Adicionar as mediaquery de responsividade pra 900px wide e 1072px wide */
+@media (max-width: 900px) {
+    main {
+        align-items: start;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container__header {
+        align-items: center;
+    }
+
+    .container__header__logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container__header__text {
+        text-align: center;
+    }
+}
+
+
+/* Adicionar as mediaquery de responsividade pra 900px wide e 1080px wide */
