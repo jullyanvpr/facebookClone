@@ -22,12 +22,18 @@ main {
 .container {
     width: 67.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     margin: 40px;
 }
 
+.container__header {
+    position: relative;
+    bottom: 50px;
+}
+
 .container__header__logo__item {
-    height: 2.5rem;
+    height: 3rem;
 }
 
 .container__header__text {
@@ -90,6 +96,11 @@ main {
     letter-spacing: 1.5px;
     text-transform: capitalize;
     cursor: pointer;
+    transition: .3s;
+}
+
+.container__form__entrar:hover {
+    background-color: #1562c7;
 }
 
 .container__form__esqueceu {
@@ -120,9 +131,13 @@ main {
     background-color: #36a420;
     font-family: "sfprodisplay";
     font-weight: 600;
-    font-size: 1.25rem;    
-
+    font-size: 1.25rem;
     cursor: pointer;
+    transition: .3s;
+}
+
+.container__form__novaConta:hover {
+    background-color: #30921c;
 }
 
 .container__text {
@@ -160,6 +175,7 @@ main {
 
     .container__header {
         align-items: center;
+        position: static;
     }
 
     .container__header__logo {
@@ -171,6 +187,3 @@ main {
         text-align: center;
     }
 }
-
-
-/* Adicionar as mediaquery de responsividade pra 900px wide e 1080px wide */
